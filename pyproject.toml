@@ -15,6 +15,10 @@ pyautogui = "0.9.54"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "8.3.2"
+pyinstaller = { version = "^6.21.0", markers = "python_version < '3.14'" }
+
+[tool.poetry.scripts]
+sudoku-gui = "sudoku_solver.gui:main"
 
 [build-system]
 requires = ["poetry-core"]
